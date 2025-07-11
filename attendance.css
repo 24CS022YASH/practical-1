@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e6fffa);
+  color: #004d40;
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #009688;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.menu a {
+  color: #fff;
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #c8f7f0;
+}
+
+/* Attendance Container */
+.attendance-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 150, 136, 0.2);
+}
+
+/* Student Info */
+.student-info {
+  background-color: #d0f0ec;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid #009688;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: #004d40;
+}
+
+/* Attendance Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.attendance-table th {
+  background: #00796b;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.attendance-table td {
+  padding: 0.9rem;
+  background: #f9fdfd;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.attendance-table tr:hover td {
+  background-color: #e0f2f1;
+}
+
+/* Status Colors */
+.status-present {
+  color: green;
+  font-weight: bold;
+}
+
+.status-absent {
+  color: red;
+  font-weight: bold;
+}
+
+/* Summary Box */
+.summary {
+  background: #d7fbe8;
+  color: #00695c;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .attendance-container {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}

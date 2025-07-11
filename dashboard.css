@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3fdf7;
+  color: #333;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #4caf50;
+  color: white;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  font-size: 1.6rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #c8f0c8;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+
+
+/* Card Style */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.1);
+  border: 1px solid #e0f2e9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(76, 175, 80, 0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+}

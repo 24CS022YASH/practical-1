@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff5e1, #ffe3d8);
+  color: #4a1c1c;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #7b2f2f;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+  font-size: 1.6rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffcf91;
+}
+
+/* Result Container */
+.result-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(123, 47, 47, 0.1);
+}
+
+/* Student Info */
+.student-info {
+  background-color: #f8e7d4;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid #7b2f2f;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  color: #4a1c1c;
+}
+
+/* Table */
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(123, 47, 47, 0.1);
+}
+
+.result-table th {
+  background-color: #a94438;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.result-table td {
+  padding: 0.9rem;
+  text-align: center;
+  background-color: #fffdf9;
+  border-bottom: 1px solid #f0d6c9;
+  transition: background 0.3s ease;
+}
+
+.result-table tr:hover td {
+  background-color: #fff4eb;
+}
+
+/* Grades */
+td.grade-a {
+  color: green;
+  font-weight: bold;
+}
+td.grade-b {
+  color: #e67e22;
+  font-weight: bold;
+}
+td.grade-c {
+  color: red;
+  font-weight: bold;
+}
+
+/* Summary */
+.summary {
+  background: linear-gradient(to right, #f5e0c5, #fbe8d3);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #6e2f2f;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .result-container {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .result-table th,
+  .result-table td {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+}

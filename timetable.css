@@ -1,0 +1,101 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff4e6, #ffd8a8);
+  min-height: 100vh;
+  color: #4b3f2f;
+  padding-bottom: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #ff922b;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  font-size: 1.6rem;
+}
+
+.menu a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #fff3bf;
+}
+
+/* Timetable Container */
+.timetable-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff7ec;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Timetable Table */
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.timetable th {
+  background: #ffa94d;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.timetable td {
+  background: #fff9f0;
+  padding: 0.9rem;
+  border-bottom: 1px solid #f0e0d0;
+  transition: background 0.3s;
+}
+
+.timetable tbody tr:hover td {
+  background: #ffe8cc;
+}
+
+/* Highlight lunch column */
+.timetable td:nth-child(5) {
+  background-color: #ffe066;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .timetable-container {
+    padding: 1rem;
+  }
+
+  .timetable th, .timetable td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
