@@ -43,6 +43,7 @@ body {
 /* Timetable Container */
 .timetable-container {
   max-width: 1000px;
+  width: 100%;
   margin: 2rem auto;
   background: #fff7ec;
   padding: 2rem;
