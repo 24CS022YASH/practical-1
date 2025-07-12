@@ -19,10 +19,12 @@ body {
   color: #fff;
   padding: 1.2rem 2rem;
   display: flex;
+  flex-wrap: wrap; /* ✅ allows wrapping on small screens */
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 .navbar h1 {
   font-size: 1.6rem;
@@ -87,13 +89,24 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* ✅ stack title and links vertically */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
   .navbar h1 {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0.4rem 0;
   }
 
   .timetable-container {
     padding: 1rem;
-    width: 100%;
   }
 
   .timetable th, .timetable td {
@@ -101,3 +114,4 @@ body {
     padding: 0.6rem;
   }
 }
+
