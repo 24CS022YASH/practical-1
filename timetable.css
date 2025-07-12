@@ -19,7 +19,6 @@ body {
   color: #fff;
   padding: 1.2rem 2rem;
   display: flex;
-  flex-wrap: wrap; /* ✅ allows wrapping on small screens */
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -88,30 +87,17 @@ body {
 }
 
 /* Responsive */
+/* Make timetable scrollable on small screens */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* ✅ stack title and links vertically */
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .navbar h1 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .menu a {
-    display: block;
-    margin: 0.4rem 0;
-  }
-
   .timetable-container {
-    padding: 1rem;
+    overflow-x: auto;     /* 🔥 Enables horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
   }
 
-  .timetable th, .timetable td {
-    font-size: 0.85rem;
-    padding: 0.6rem;
+  .timetable {
+    width: 800px;  /* Or set this to your table’s total width */
+    min-width: 700px;
   }
 }
+
 
