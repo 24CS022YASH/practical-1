@@ -53,7 +53,7 @@ body {
 
 /* Timetable Table */
 .timetable {
-  width: 100%;
+  
   border-collapse: collapse;
   text-align: center;
   overflow: hidden;
