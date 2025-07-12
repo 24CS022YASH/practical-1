@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   color: #4b3f2f;
   padding-bottom: 2rem;
+  display: flex;
 }
 
 /* Navbar */
