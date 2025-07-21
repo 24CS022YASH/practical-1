@@ -107,6 +107,10 @@ body {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;  
 }
 
 /* Timetable Table */
